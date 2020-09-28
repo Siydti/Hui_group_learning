@@ -1,0 +1,74 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "慧团学",
+				"usingComponents": {
+				  "van-icon": "/wxcomponents/vant/icon/index",
+				  "van-rate": "/wxcomponents/vant/rate/index"
+				}
+			}
+		},
+		{
+			"path": "pages/orderForm/orderForm",
+			"style": {
+				"navigationBarTitleText": "订单"
+			}
+		},
+		{
+			"path": "pages/recordedVideo/recordedVideo",
+			"style": {
+				"navigationBarTitleText": "录播"
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "我的"
+			}
+		}
+	], 
+	 "subPackages": [{
+        "root": "pagesA",
+        "pages": [{
+            "path": "store/store",
+            "style": { 
+				
+			}
+        }]
+    }],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#9A9A9A",
+	    "selectedColor": "#48B4B7",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/index/index",
+	        "iconPath": "static/images/-e-首页.png",
+	        "selectedIconPath": "static/images/-e-首页.png",
+	        "text": "首页"
+	    }, {
+	        "pagePath": "pages/orderForm/orderForm",
+	        "iconPath": "static/images/-e-dingdan-.png",
+	        "selectedIconPath": "./static/images/-e-dingdan-.png",
+	        "text": "订单"
+	    }, {
+	        "pagePath": "pages/recordedVideo/recordedVideo",
+	        "iconPath": "static/images/-e-video-.png",
+	        "selectedIconPath": "static/images/video-.png",
+	        "text": "录播"
+	    }, {
+	        "pagePath": "pages/my/my",
+	        "iconPath": "./static/images/-e-wode.png",
+	        "selectedIconPath": "static/images/-e-wode.png",
+	        "text": "我的"
+	    }]
+	}
+}

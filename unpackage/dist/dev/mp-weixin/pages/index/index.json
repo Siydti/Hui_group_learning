@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "慧团学",
+  "usingComponents": {
+    "van-icon": "/wxcomponents/vant/icon/index",
+    "van-rate": "/wxcomponents/vant/rate/index"
+  }
+}
