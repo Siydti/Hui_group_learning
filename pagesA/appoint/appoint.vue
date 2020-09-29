@@ -6,7 +6,7 @@
 		
 		<input type="number" placeholder="请输入您的电话号码" class="appoint_input"/>
 		
-		<view class="appoint_btn">
+		<view class="appoint_btn" @click="go_appointSucceed">
 			立即预约
 		</view>
 	</view>
@@ -20,7 +20,11 @@
 			}
 		},
 		methods: {
-			
+			go_appointSucceed() {
+				uni.redirectTo({
+					url:'/pagesA/appointSucceed/appointSucceed'
+				})
+			}
 		}
 	}
 </script>

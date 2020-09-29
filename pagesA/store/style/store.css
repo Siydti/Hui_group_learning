@@ -5,7 +5,11 @@ page {
 .store {
   width: 100%;
   height: 100%;
-  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* 分享弹框 */
+  /* 海报弹框 */
 }
 .store .store_banner {
   width: 100%;
@@ -28,12 +32,348 @@ page {
 }
 .store .store_banner .store_bannerBtn_box .store_bannerBtn_video,
 .store .store_banner .store_bannerBtn_box .store_bannerBtn_image {
-  background-color: rgba(1, 1, 1, 0.3);
+  background-color: rgba(107, 93, 93, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   font-size: 18rpx;
   padding: 10rpx 18rpx;
-  border-radius: ;
+  border-radius: 25rpx;
+}
+.store .store_banner .store_bannerBtn_box .store_bannerBtn_video {
+  margin-right: 20rpx;
+}
+.store .store_title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rpx 30rpx ;
+  height: 186rpx;
+  border-bottom: 1rpx solid #999999;
+}
+.store .store_title .store_titleLeft {
+  flex: 1;
+}
+.store .store_title .store_titleLeft .store_titleLeft_top {
+  color: #000000;
+  font-size: 36rpx;
+  padding: 20rpx 0px ;
+}
+.store .store_title .store_titleLeft .store_titleLeft_borrom {
+  display: flex;
+  align-items: center;
+  color: #333;
+  font-size: 24rpx;
+}
+.store .store_title .store_titleRight {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28rpx;
+  font-size: 24rpx;
+  color: #999999;
+  margin-left: 43rpx;
+  width: 180rpx;
+  position: relative;
+}
+.store .store_title .store_titleRight view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.store .store_title .store_titleRight view image {
+  margin-bottom: 5rpx;
+}
+.store .store_title .store_titleRight .store_titleRight_fixedBox {
+  width: 200rpx;
+  height: 53rpx;
+  position: absolute;
+  left: -78rpx;
+  bottom: 40rpx;
+}
+.store .store_title .store_titleRight .store_titleRight_fixedBox .store_titleRight_fixed {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 18rpx;
+  text-align: center;
+  line-height: 62rpx;
+}
+.store .store_site {
+  width: 100%;
+  height: 90rpx;
+  padding-top: 20rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.store .store_site .store_siteTop {
+  margin-left: 30rpx;
+  color: #000;
+  font-size: 24rpx;
+  margin-bottom: 10rpx;
+}
+.store .store_site .store_siteBottom {
+  color: #656565;
+  font-size: 24rpx;
+  margin-left: 30rpx;
+}
+.store .store_site .store_sitePhone {
+  margin-right: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+.store .store_site .store_sitePhone text {
+  font-size: 24rpx;
+  color: #656565;
+}
+.store .segmentation {
+  background-color: #f2f2f2;
+}
+.store .store_video {
+  height: 432rpx;
+}
+.store .store_video .store_video_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 79rpx;
+  border-bottom: 1rpx solid #999999;
+  margin: 0px 24rpx;
+}
+.store .store_video .store_video_title .store_video_titleLeft {
+  color: #333333;
+  font-size: 30rpx;
+}
+.store .store_video .store_video_title .store_video_titleRight {
+  color: #999999;
+  flex-direction: 24rpx;
+}
+.store .store_video .store_videoBox {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  height: 380rpx;
+  padding-top: 20rpx;
+  padding-bottom: 30rpx;
+}
+.store .store_video .store_videoBox .store_video_list {
+  width: 300rpx;
+  height: 380rpx;
+  margin: 0px 20rpx;
+}
+.store .store_video .store_videoBox .store_video_list .store_video_listTop {
+  width: 300rpx;
+  height: 220rpx;
+  position: relative;
+}
+.store .store_video .store_videoBox .store_video_list .store_video_listTop .playbtn {
+  position: absolute;
+  top: 77rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 66rpx;
+  height: 66rpx;
+}
+.store .store_video .store_videoBox .store_video_list .store_video_listTop .times {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  font-size: 18rpx;
+  padding: 10rpx;
+  border-radius: 20rpx;
+  background-color: rgba(144, 121, 121, 0.3);
+}
+.store .store_video .store_videoBox .store_video_list .store_video_listBottm {
+  color: #333;
+  font-size: 28rpx;
+}
+.store .store_groupBuy {
+  background-color: #fff;
+  width: 670rpx;
+  padding: 0px 40rpx ;
+}
+.store .store_groupBuy .store_groupBuy_title {
+  height: 90rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  color: #000;
+  font-weight: bold;
+}
+.store .store_groupBuy .store_groupBuy_list {
+  display: flex;
+  height: 128rpx;
+  margin-bottom: 14rpx;
+}
+.store .store_groupBuy .store_groupBuy_list .store_groupBuy_listLeft {
+  width: 128rpx;
+  height: 128rpx;
+  margin-right: 20rpx;
+  position: relative;
+}
+.store .store_groupBuy .store_groupBuy_list .store_groupBuy_listLeft .store_groupBuy_listLeft_hint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #ea4a27;
+  color: #fff;
+  padding: 4rpx 8rpx;
+  font-size: 18rpx;
+  border-radius: 10rpx 0px 10rpx 0px ;
+}
+.store .store_groupBuy .store_groupBuy_list .store_groupBuy_listRight {
+  flex: 1;
+}
+.store .store_groupBuy .store_groupBuy_list .store_groupBuy_listRight .top {
+  font-size: 24rpx;
+  color: #000;
+  font-weight: bold;
+  padding-left: 20rpx;
+  margin-bottom: 16rpx;
+}
+.store .store_groupBuy .store_groupBuy_list .store_groupBuy_listRight .bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.store .store_groupBuy .store_groupBuy_list .store_groupBuy_listRight .bottom .bottom_left {
+  display: flex;
+  flex-direction: column;
+}
+.store .store_groupBuy .store_groupBuy_list .store_groupBuy_listRight .bottom .bottom_left .bottom_left_top {
+  color: #585858;
+  font-size: 18rpx;
+  margin-bottom: 20rpx;
+}
+.store .store_groupBuy .store_groupBuy_list .store_groupBuy_listRight .bottom .bottom_left .bottom_left_top text {
+  margin: 0px 5rpx;
+}
+.store .store_bottom {
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+}
+.store .store_bottom .store_bottom_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 110rpx;
+  background-color: #fff;
+  color: #999;
+  font-size: 22rpx;
+}
+.store .store_bottom .store_bottom_right {
+  background-color: #FF6634;
+  color: #fff;
+  font-size: 34rpx;
+  text-align: center;
+  line-height: 100rpx;
+  flex: 1;
+}
+.store .share_box {
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 402rpx;
+}
+.store .share_box .share_boxTop {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0rpx;
+}
+.store .share_box .share_boxTop .share_boxTop_left,
+.store .share_box .share_boxTop .share_boxTop_right {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  color: #343434;
+  font-size: 30rpx;
+}
+.store .share_box .share_boxBottom {
+  width: 100%;
+  height: 92rpx;
+  border-top: 1rpx solid #9A9A9A;
+  line-height: 92rpx;
+  text-align: center;
+  font-size: 36rpx;
+  color: #9A9A9A;
+}
+.store .poster_box {
+  position: fixed;
+  width: 690rpx;
+  height: 666rpx;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 30rpx;
+  z-index: 100;
+}
+.store .poster_box .poster_box_title {
+  width: 100%;
+  text-align: center;
+  color: #343434;
+  font-size: 30rpx;
+  margin-bottom: 30rpx;
+}
+.store .poster_box .poster_box_img {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 5rpx;
+  margin-bottom: 30rpx;
+}
+.store .poster_box .poster_box_main {
+  display: flex;
+  align-items: center;
+  height: 180rpx;
+}
+.store .poster_box .poster_box_main .poster_box_mainLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.store .poster_box .poster_box_main .poster_box_mainLeft .poster_box_mainLeft_top {
+  color: #343434;
+  font-size: 28rpx;
+}
+.store .poster_box .poster_box_main .poster_box_mainLeft .poster_box_mainLeft_mid {
+  display: flex;
+  justify-content: flex-start;
+}
+.store .poster_box .poster_box_main .poster_box_mainLeft .poster_box_mainLeft_bottom {
+  color: #666666;
+  font-size: 24rpx;
+}
+.store .poster_box .poster_box_main .poster_box_mainRight {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #9A9A9A;
+  font-size: 20rpx;
+  margin-right: 30rpx;
+  margin-left: 100rpx;
+}
+.store .poster_box .poster_box_bottom {
+  width: 260rpx;
+  height: 60rpx;
+  background-color: #0CC064;
+  color: #fff;
+  font-size: -78rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  line-height: 60rpx;
+  margin: auto;
+  margin-top: 20rpx;
 }
