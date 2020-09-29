@@ -64,9 +64,44 @@
         "pages": [{
             "path": "store/store",
             "style": { 
-				
+				"usingComponents": {
+				  "van-rate": "/wxcomponents/vant/rate/index",
+				  "van-popup": "/wxcomponents/vant/popup/index"
+				}
 			}
-        }]
+        }    ,{
+                    "path" : "complaint/complaint",
+                    "style" : {
+						"navigationBarTitleText": "申请投诉"
+					}
+                }
+                ,{
+                    "path" : "course/course",
+                    "style" : {}
+                }
+                ,{
+                    "path" : "appoint/appoint",
+                    "style" : {
+						"navigationBarTitleText": "立即预约"
+					}
+                }
+                ,{
+                    "path" : "payment/payment",
+                    "style" : {
+						"usingComponents": {
+						  "van-stepper": "/wxcomponents/vant/stepper/index",
+						  "van-checkbox": "/wxcomponents/vant/checkbox/index",
+						    "van-checkbox-group": "/wxcomponents/vant/checkbox-group/index"
+						}
+					}
+                }
+                ,{
+                    "path" : "groupPurchase/groupPurchase",
+                    "style" : {
+						
+					}
+                }
+            ]
     }],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
