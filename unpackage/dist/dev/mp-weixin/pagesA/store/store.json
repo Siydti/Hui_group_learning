@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "van-rate": "/wxcomponents/vant/rate/index",
+    "van-popup": "/wxcomponents/vant/popup/index"
+  }
 }

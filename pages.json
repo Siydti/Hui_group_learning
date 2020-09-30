@@ -53,6 +53,72 @@
 			}
 		},
 		{
+			"path": "pages/mechanism/mechanism",
+			"style": {
+				"navigationBarTitleText": "分管机构",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/track/track",
+			"style": {
+				"navigationBarTitleText": "客户跟踪",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/developmentAgency/developmentAgency",
+			"style": {
+				"navigationBarTitleText": "发展代理",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/withdrawal/withdrawal",
+			"style": {
+				"navigationBarTitleText": "提现",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/withdrawalPost/withdrawalPost",
+			"style": {
+				"navigationBarTitleText": "提现",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/detailed/detailed",
+			"style": {
+				"navigationBarTitleText": "明细",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/myOrdinary/myOrdinary",//我的普通用户
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/mybusiness/mybusiness",//我的商家用户
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/myUser/myUser",//我的代理用户
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
+			"path": "pages/myRegion/myRegion",//我的区域代理用户
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
 			"path": "pages/my/my",
 			"style": {
 				"navigationBarTitleText": "我的"
@@ -130,7 +196,7 @@
 	        "selectedIconPath": "static/images/video-.png",
 	        "text": "录播"
 	    }, {
-	        "pagePath": "pages/my/my",
+	        "pagePath": "pages/myRegion/myRegion",
 	        "iconPath": "./static/images/-e-wode.png",
 	        "selectedIconPath": "static/images/-e-wode.png",
 	        "text": "我的"

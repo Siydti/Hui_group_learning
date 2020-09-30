@@ -1,0 +1,1 @@
+<view class="withdrawal"><view class="box"><view class="title">提现金额</view><view class="li"><text>￥</text><input type="number" value=""/></view><view class="infos">可提现金额：800元<text>（超出部分需要走银行汇款，税金6%）</text></view><view data-event-opts="{{[['tap',[['withdrawalPost',['$event']]]]]}}" class="btn" bindtap="__e">提现</view></view></view>

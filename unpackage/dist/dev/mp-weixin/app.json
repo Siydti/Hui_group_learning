@@ -7,13 +7,28 @@
     "pages/recordedVideo/recordedVideo",
     "pages/videoDetail/videoDetail",
     "pages/confrimOrder/confrimOrder",
+    "pages/mechanism/mechanism",
+    "pages/track/track",
+    "pages/developmentAgency/developmentAgency",
+    "pages/withdrawal/withdrawal",
+    "pages/withdrawalPost/withdrawalPost",
+    "pages/detailed/detailed",
+    "pages/myOrdinary/myOrdinary",
+    "pages/mybusiness/mybusiness",
+    "pages/myUser/myUser",
+    "pages/myRegion/myRegion",
     "pages/my/my"
   ],
   "subPackages": [
     {
       "root": "pagesA",
       "pages": [
-        "store/store"
+        "store/store",
+        "complaint/complaint",
+        "course/course",
+        "appoint/appoint",
+        "payment/payment",
+        "groupPurchase/groupPurchase"
       ]
     }
   ],
@@ -48,13 +63,12 @@
         "text": "录播"
       },
       {
-        "pagePath": "pages/my/my",
+        "pagePath": "pages/myRegion/myRegion",
         "iconPath": "./static/images/-e-wode.png",
         "selectedIconPath": "static/images/-e-wode.png",
         "text": "我的"
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap37.json"
+  "usingComponents": {}
 }
