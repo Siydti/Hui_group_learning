@@ -95,6 +95,75 @@
 			}
 		},
 		{
+			"path": "pages/study/study",
+			"style": {
+				"navigationBarTitleText": "学习资料",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/agentPost/agentPost",
+			"style": {
+				"navigationBarTitleText": "代理申请",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/corporateTransfer/corporateTransfer",
+			"style": {
+				"navigationBarTitleText": "对公转账",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/cooperationList/cooperationList",
+			"style": {
+				"navigationBarTitleText": "合作列表",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/schoolType/schoolType",
+			"style": {
+				"navigationBarTitleText": "学校类型",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/walletDetail/walletDetail",
+			"style": {
+				"navigationBarTitleText": "红包明细",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/settlementPost/settlementPost",
+			"style": {
+				"navigationBarTitleText": "入驻申请",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/browse/browse",
+			"style": {
+				"navigationBarTitleText": "浏览记录",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/recharge/recharge",
+			"style": {
+				"navigationBarTitleText": "充值",
+				"navigationBarBackgroundColor": "#FFFFFF"
+			}
+		},
+		{
+			"path": "pages/customerManagement/customerManagement",//客户管理
+			"style": {
+				"navigationStyle":"custom"
+			}
+		},
+		{
 			"path": "pages/myOrdinary/myOrdinary",//我的普通用户
 			"style": {
 				"navigationStyle":"custom"
@@ -196,7 +265,7 @@
 	        "selectedIconPath": "static/images/video-.png",
 	        "text": "录播"
 	    }, {
-	        "pagePath": "pages/myRegion/myRegion",
+	        "pagePath": "pages/mybusiness/mybusiness",
 	        "iconPath": "./static/images/-e-wode.png",
 	        "selectedIconPath": "static/images/-e-wode.png",
 	        "text": "我的"

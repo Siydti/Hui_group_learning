@@ -40,11 +40,19 @@
 			},
 			upImg:function(){
 				uni.chooseImage({
-				    count: 3,
-				    sizeType: ['original', 'compressed'],
-				    sourceType: ['album'],
-				    success: function(res) {
-				        console.log(res)
+				    success: (chooseImageRes) => {
+				        const tempFilePaths = chooseImageRes.tempFilePaths;
+				        uni.uploadFile({
+				            url: 'https://www.example.com/upload',
+				            filePath: tempFilePaths[0],
+				            name: 'file',
+				            formData: {
+				                'user': 'test'
+				            },
+				            success: (uploadFileRes) => {
+				                console.log(uploadFileRes.data);
+				            }
+				        });
 				    }
 				});
 			}

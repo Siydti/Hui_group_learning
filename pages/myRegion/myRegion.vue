@@ -36,15 +36,15 @@
 				<view class="iconfont iconhezuo" style="color: #61C28E;"></view>
 				<text>我要合作</text>
 			</navigator>
-			<navigator class="li" hover-class="none">
+			<navigator class="li" hover-class="none" url="../study/study">
 				<view class="iconfont iconkaifa___" style="color: #F19A3E;"></view>
 				<text>软件开发</text>
 			</navigator>
-			<navigator class="li" hover-class="none">
+			<navigator class="li" hover-class="none" url="../study/study">
 				<view class="iconfont iconshipin-tianchong" style="color: #EDBE2F;"></view>
 				<text>视频制作</text>
 			</navigator>
-			<navigator class="li" hover-class="none">
+			<navigator class="li" hover-class="none" url="../study/study">
 				<view class="iconfont iconziliaoku" style="color: #7183C1;"></view>
 				<text>学习资料</text>
 			</navigator>

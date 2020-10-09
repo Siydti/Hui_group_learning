@@ -13,6 +13,16 @@
     "pages/withdrawal/withdrawal",
     "pages/withdrawalPost/withdrawalPost",
     "pages/detailed/detailed",
+    "pages/study/study",
+    "pages/agentPost/agentPost",
+    "pages/corporateTransfer/corporateTransfer",
+    "pages/cooperationList/cooperationList",
+    "pages/schoolType/schoolType",
+    "pages/walletDetail/walletDetail",
+    "pages/settlementPost/settlementPost",
+    "pages/browse/browse",
+    "pages/recharge/recharge",
+    "pages/customerManagement/customerManagement",
     "pages/myOrdinary/myOrdinary",
     "pages/mybusiness/mybusiness",
     "pages/myUser/myUser",
@@ -63,12 +73,13 @@
         "text": "录播"
       },
       {
-        "pagePath": "pages/myRegion/myRegion",
+        "pagePath": "pages/mybusiness/mybusiness",
         "iconPath": "./static/images/-e-wode.png",
         "selectedIconPath": "static/images/-e-wode.png",
         "text": "我的"
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {},
+  "sitemapLocation": "sitemap23.json"
 }

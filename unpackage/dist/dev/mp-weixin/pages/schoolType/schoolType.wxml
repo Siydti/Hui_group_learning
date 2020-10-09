@@ -1,0 +1,1 @@
+<view class="schoolType"><view class="ul"><block wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="index"><view class="{{[listIndex==index?'li active':'li']}}" style="{{((index+1)%5==0?'margin-right:0rpx;':'margin-right: 15rpx;')}}">{{item}}</view></block></view><view class="btns"><view class="btn">确认</view></view></view>

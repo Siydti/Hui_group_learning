@@ -172,11 +172,19 @@ var _default =
     },
     upImg: function upImg() {
       uni.chooseImage({
-        count: 3,
-        sizeType: ['original', 'compressed'],
-        sourceType: ['album'],
-        success: function success(res) {
-          console.log(res);
+        success: function success(chooseImageRes) {
+          var tempFilePaths = chooseImageRes.tempFilePaths;
+          uni.uploadFile({
+            url: 'https://www.example.com/upload',
+            filePath: tempFilePaths[0],
+            name: 'file',
+            formData: {
+              'user': 'test' },
+
+            success: function success(uploadFileRes) {
+              console.log(uploadFileRes.data);
+            } });
+
         } });
 
     } } };exports.default = _default;

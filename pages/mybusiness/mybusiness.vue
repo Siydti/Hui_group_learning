@@ -8,43 +8,43 @@
 			</view>
 		</view>
 		<view class="navs">
-			<view class="li">
+			<navigator class="li" hover-class="none">
 				<view class="iconfont iconwuxing"></view>
 				<text>收藏</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none">
 				<view class="iconfont iconpinglun" style="color: #2DAEE0;"></view>
 				<text>评价</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none">
 				<view class="iconfont iconshijian" style="color: #FF909E;"></view>
 				<text>最近浏览</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none">
 				<view class="iconfont iconguanliyuan" style="color: #A18CD1;"></view>
 				<text>客户管理</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none">
 				<view class="iconfont iconhezuo" style="color: #61C28E;"></view>
 				<text>我要合作</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none" url="../study/study">
 				<view class="iconfont iconkaifa___" style="color: #F19A3E;"></view>
 				<text>软件开发</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none" url="../study/study">
 				<view class="iconfont iconshipin-tianchong" style="color: #EDBE2F;"></view>
 				<text>视频制作</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none">
 				<view class="iconfont iconshouzhimingxicaifuhongbaoyue" style="color: #ED5151;"></view>
 				<text>红包充值</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none">
 				<view class="iconfont icontongzhi" style="color: #3978A4;"></view>
 				<text>系统通知</text>
 				<view class="num">2</view>
-			</view>
+			</navigator>
 		</view>
 		<view class="infos">
 			<view class="left">
@@ -57,8 +57,8 @@
 			<view class="right">
 				<view class="text">累计56292(元)</view>
 				<view class="btns">
-					<view class="btn">提现</view>
-					<view class="btn active">明细</view>
+					<view class="btn" @click="withdrawal">提现</view>
+					<view class="btn active" @click="detailed">明细</view>
 				</view>
 			</view>
 		</view>
@@ -67,7 +67,18 @@
 
 <script>
 	export default{
-		
+		methods:{
+			withdrawal:function(){
+				uni.navigateTo({
+					url:"../withdrawal/withdrawal"
+				})
+			},
+			detailed:function(){
+				uni.navigateTo({
+					url:"../detailed/detailed"
+				})
+			}
+		}
 	}
 </script>
 
