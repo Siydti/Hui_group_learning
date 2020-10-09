@@ -10,7 +10,7 @@
 				已经成功拼团：
 			</view>
 			<view class="groupSuccess_main_scholl">
-				【环球新语外语培训（回龙观校区】
+				名字地址
 			</view>
 			<view class="groupSuccess_main_hint">
 				请留意您的手机，我们将通知商户尽快与您联系

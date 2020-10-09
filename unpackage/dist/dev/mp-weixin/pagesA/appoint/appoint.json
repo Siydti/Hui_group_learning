@@ -1,4 +1,6 @@
 {
   "navigationBarTitleText": "立即预约",
-  "usingComponents": {}
+  "usingComponents": {
+    "van-popup": "/wxcomponents/vant/popup/index"
+  }
 }

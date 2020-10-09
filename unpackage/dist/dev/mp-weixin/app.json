@@ -38,7 +38,22 @@
         "course/course",
         "appoint/appoint",
         "payment/payment",
-        "groupPurchase/groupPurchase"
+        "groupPurchase/groupPurchase",
+        "groupSuccess/groupSuccess",
+        "appointSucceed/appointSucceed",
+        "customerInput/customerInput",
+        "teachers/teachers",
+        "comment/comment",
+        "active/active"
+      ]
+    },
+    {
+      "root": "pagesC",
+      "pages": [
+        "evaluate/evaluate",
+        "cooperativeManagement/cooperativeManagement",
+        "cooperative/cooperative",
+        "collect/collect"
       ]
     }
   ],
@@ -48,38 +63,11 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
-  "tabBar": {
-    "color": "#9A9A9A",
-    "selectedColor": "#48B4B7",
-    "borderStyle": "black",
-    "backgroundColor": "#ffffff",
-    "list": [
-      {
-        "pagePath": "pages/index/index",
-        "iconPath": "static/images/-e-首页.png",
-        "selectedIconPath": "static/images/-e-首页.png",
-        "text": "首页"
-      },
-      {
-        "pagePath": "pages/orderForm/orderForm",
-        "iconPath": "static/images/-e-dingdan-.png",
-        "selectedIconPath": "./static/images/-e-dingdan-.png",
-        "text": "订单"
-      },
-      {
-        "pagePath": "pages/recordedVideo/recordedVideo",
-        "iconPath": "static/images/-e-video-.png",
-        "selectedIconPath": "static/images/video-.png",
-        "text": "录播"
-      },
-      {
-        "pagePath": "pages/mybusiness/mybusiness",
-        "iconPath": "./static/images/-e-wode.png",
-        "selectedIconPath": "static/images/-e-wode.png",
-        "text": "我的"
-      }
-    ]
+  "permission": {
+    "scope.userLocation": {
+      "desc": "用户实现定位功能"
+    }
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap23.json"
+  "sitemapLocation": "sitemap.json"
 }

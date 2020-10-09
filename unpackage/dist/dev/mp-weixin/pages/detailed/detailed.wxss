@@ -33,8 +33,7 @@ page {
   background-color: #FFFFFF;
   height: 90rpx;
   padding: 0 70rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -81,8 +80,7 @@ page {
   width: 24rpx;
   height: 24rpx;
   background: #FF1E1E;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   color: #FFFFFF;
   font-size: 20rpx;
   text-align: center;
@@ -110,8 +108,7 @@ page {
           justify-content: space-between;
   background: #FFFFFF;
   padding: 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-top: 4rpx;
 }
 .detailed .items .item .left {
@@ -126,8 +123,7 @@ page {
 .detailed .items .item .left image {
   width: 90rpx;
   height: 90rpx;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
 }
 .detailed .items .item .left .r {
   margin-left: 20rpx;

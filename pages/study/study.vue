@@ -1,27 +1,13 @@
 <template>
 	<view class="study">
-		<image src="../../static/imgs/phone.png" mode="widthFix" class="phone"></image>
-		<view class="items">
+		<!-- <image src="../../static/imgs/phone.png" mode="widthFix" class="phone"></image> -->
+		<view class="items" v-for="index in 2" :key="index">
 			<view class="img">
 				<image src="../../static/imgs/11.png" mode="widthFix"></image>
-				<image src="../../static/imgs/open.png" mode="widthFix" class="open"></image>
+				<!-- <image src="../../static/imgs/open.png" mode="widthFix" class="open"></image> -->
 			</view>
-			<view class="title">交互设计必学工具Axure从入门到精通</view>
-			<view class="info">axure是美国XX公司旗舰产品，是一个专业的快速原型设是一个专业的快速原型设</view>
-		</view>
-		<view class="items">
-			<view class="img">
-				<image src="../../static/imgs/11.png" mode="widthFix"></image>
-			</view>
-			<view class="title">交互设计必学工具Axure从入门到精通</view>
-			<view class="info">axure是美国XX公司旗舰产品，是一个专业的快速原型设是一个专业的快速原型设</view>
-		</view>
-		<view class="items">
-			<view class="img">
-				<image src="../../static/imgs/11.png" mode="widthFix"></image>
-			</view>
-			<view class="title">交互设计必学工具Axure从入门到精通</view>
-			<view class="info">axure是美国XX公司旗舰产品，是一个专业的快速原型设是一个专业的快速原型设</view>
+			<view class="title">定制打造高端软件</view>
+			<view class="info">小程序开发 公众号开发 APP开发 网站开发 网页设计 平面设计</view>
 		</view>
 	</view>
 </template>
@@ -65,10 +51,7 @@
 			.info{
 				font-size: 24rpx;
 				color: #666666;
-				width: 600rpx;
-				overflow: hidden;
-				white-space: nowrap;
-				text-overflow: ellipsis;
+				
 			}
 		}
 	}

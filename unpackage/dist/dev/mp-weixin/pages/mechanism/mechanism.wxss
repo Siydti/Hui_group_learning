@@ -38,16 +38,14 @@ page {
   -webkit-align-items: center;
           align-items: center;
   padding: 25rpx 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: #FFFFFF;
   margin-top: 4rpx;
 }
 .mechanism .li image {
   width: 200rpx;
   height: 120rpx;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
 }
 .mechanism .li .right {
   margin-left: 30rpx;

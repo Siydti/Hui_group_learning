@@ -31,8 +31,7 @@ page {
 }
 .postComments .infos {
   padding: 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background: #FFFFFF;
 }
 .postComments .infos .title {
@@ -86,8 +85,7 @@ page {
 .postComments .from {
   background: #FFFFFF;
   padding: 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-top: 10rpx;
 }
 .postComments .from textarea {
@@ -101,8 +99,7 @@ page {
   height: 120rpx;
   background: #F2F2F2;
   border: 1px solid #999999;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -141,8 +138,7 @@ page {
   width: 690rpx;
   height: 80rpx;
   background: #0CBF63;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
   font-size: 30rpx;
   color: #FFFFFF;
   text-align: center;

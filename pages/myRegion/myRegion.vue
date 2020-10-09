@@ -8,15 +8,15 @@
 			</view>
 		</view>
 		<view class="navs">
-			<navigator  class="li" hover-class="none">
+			<navigator  class="li" hover-class="none" url="/pagesC/collect/collect">
 				<view class="iconfont iconwuxing"></view>
 				<text>收藏</text>
 			</navigator >
-			<navigator class="li" hover-class="none">
+			<navigator class="li" hover-class="none" url="/pagesC/evaluate/evaluate">
 				<view class="iconfont iconpinglun" style="color: #2DAEE0;"></view>
 				<text>评价</text>
 			</navigator>
-			<navigator class="li" hover-class="none">
+			<navigator class="li" hover-class="none" url="/pages/browse/browse">
 				<view class="iconfont iconshijian" style="color: #FF909E;"></view>
 				<text>最近浏览</text>
 			</navigator>
@@ -24,7 +24,7 @@
 				<view class="iconfont iconusers" style="color:#6DA4FC;"></view>
 				<text>发展代理</text>
 			</navigator>
-			<navigator class="li" hover-class="none">
+			<navigator class="li" hover-class="none" url="/pages/customerManagement/customerManagement">
 				<view class="iconfont iconguanliyuan" style="color: #A18CD1;"></view>
 				<text>客户管理</text>
 			</navigator>
@@ -32,7 +32,7 @@
 				<view class="iconfont icongenzongmubiaoshezhi" style="color: #47B4B7;"></view>
 				<text>客户跟踪</text>
 			</navigator>
-			<navigator class="li" hover-class="none">
+			<navigator class="li" hover-class="none" url="/pages/settlementPost/settlementPost">
 				<view class="iconfont iconhezuo" style="color: #61C28E;"></view>
 				<text>我要合作</text>
 			</navigator>

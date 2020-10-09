@@ -86,8 +86,7 @@ page {
   -webkit-justify-content: space-between;
           justify-content: space-between;
   padding: 0 60rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: absolute;
   width: 100%;
   bottom: 0;
@@ -131,8 +130,7 @@ page {
   width: 120%;
   background: #FFFFFF;
   height: 300rpx;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   position: absolute;
   left: -10%;
   bottom: -150rpx;
@@ -141,8 +139,7 @@ page {
 .customerManagement .top .bg .white image {
   width: 120rpx;
   height: 120rpx;
-  -webkit-border-radius: 60rpx;
-          border-radius: 60rpx;
+  border-radius: 60rpx;
   position: absolute;
   left: 50%;
   -webkit-transform: translate(-60rpx);
@@ -161,8 +158,7 @@ page {
           justify-content: space-between;
   background: #FFFFFF;
   padding: 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin-top: 1px;
 }
 .customerManagement .items .item .left .name {
@@ -179,8 +175,7 @@ page {
   color: #FF6634;
   padding: 13rpx 14rpx;
   border: 1px solid #FF6634;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
+  border-radius: 5px;
 }
 .customerManagement .items .item .active {
   border: none;
@@ -208,11 +203,9 @@ page {
 .customerManagement .mode .box {
   background: #FFFFFF;
   width: 710rpx;
-  -webkit-border-radius: 20rpx;
-          border-radius: 20rpx;
+  border-radius: 20rpx;
   padding: 20rpx 0 40rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .customerManagement .mode .box .close {
   display: -webkit-box;
@@ -241,8 +234,7 @@ page {
   -webkit-justify-content: space-between;
           justify-content: space-between;
   padding: 30rpx 40rpx 40rpx 40rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .customerManagement .mode .box .li .left {
   font-size: 28rpx;
@@ -263,8 +255,7 @@ page {
   -webkit-align-items: center;
           align-items: center;
   padding: 40rpx 35rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-top: 10rpx solid #F2F2F2;
   border-bottom: 10rpx solid #F2F2F2;
 }
@@ -285,10 +276,8 @@ page {
   font-size: 26rpx;
   color: #999999;
   padding: 20rpx 10rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
   border: 1px solid rgba(153, 153, 153, 0.5);
 }
 .customerManagement .mode .box .imgs {
@@ -314,15 +303,13 @@ page {
   font-size: 26rpx;
   color: #999999;
   padding: 30rpx 20rpx 40rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .customerManagement .mode .box .btn {
   width: 670rpx;
   height: 80rpx;
   background: #0CBF63;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
   font-size: 30rpx;
   color: #FFFFFF;
   text-align: center;

@@ -16,8 +16,7 @@ page {
   width: 670rpx;
   height: 80rpx;
   margin: 50rpx auto;
-  -webkit-border-radius: 40rpx;
-          border-radius: 40rpx;
+  border-radius: 40rpx;
   background-color: #EBEBEB;
   color: #343434;
   font-size: 22rpx;
@@ -28,8 +27,7 @@ page {
   width: 690rpx;
   height: 80rpx;
   background: #FF6634;
-  -webkit-border-radius: 40rpx;
-          border-radius: 40rpx;
+  border-radius: 40rpx;
   color: #fff;
   text-align: center;
   line-height: 80rpx;
@@ -37,5 +35,14 @@ page {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   bottom: 100rpx;
+}
+.appoint .popup_main {
+  padding-left: 40rpx;
+  padding-top: 40rpx;
+}
+.appoint .popup_main .title {
+  color: #333333;
+  font-size: 36rpx;
+  margin-bottom: 100rpx;
 }
 

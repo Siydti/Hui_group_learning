@@ -1,0 +1,93 @@
+page {
+  width: 100%;
+  height: 100%;
+}
+.cooperative {
+  width: 100%;
+  height: 100%;
+  padding: 130rpx 30rpx;
+  background: -webkit-linear-gradient(bottom, #47B4B7, #3FD1D5);
+  background: linear-gradient(0deg, #47B4B7, #3FD1D5);
+}
+.cooperative .title {
+  width: 695rpx;
+  height: 240rpx;
+  position: relative;
+  margin-bottom: 20rpx;
+}
+.cooperative .title .title_content {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.cooperative .title .title_content .line {
+  display: inline-block;
+  width: 54rpx;
+  height: 2rpx;
+  background-color: #47B4B7;
+}
+.cooperative .title .title_content .main {
+  color: #47B4B7;
+  margin: 0px 20rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.cooperative .cooperative_main {
+  width: 696rpx;
+  height: 614rpx;
+  background-color: #fff;
+  border-radius: 5rpx;
+}
+.cooperative .cooperative_main .cooperative_main_title {
+  padding-top: 50rpx;
+  padding-left: 25rpx;
+  color: #333333;
+  font-size: 24rpx;
+}
+.cooperative .cooperative_main .cooperative_main_title text {
+  color: #999;
+}
+.cooperative .cooperative_main .password {
+  color: #333333;
+  font-size: 36rpx;
+  text-align: center;
+  margin: 129rpx auto;
+}
+.cooperative .cooperative_main .hit {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  margin-bottom: 50rpx;
+}
+.cooperative .cooperative_main .hit text {
+  color: #999999;
+  font-size: 24rpx;
+}
+.cooperative .cooperative_main .phone {
+  width: 635rpx;
+  height: 96rpx;
+  background-color: #47B4B7;
+  margin-left: 30rpx;
+  color: #fff;
+  line-height: 96rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
+

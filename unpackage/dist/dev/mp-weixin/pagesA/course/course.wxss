@@ -299,11 +299,11 @@ page {
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
           justify-content: space-between;
-  padding-right: 55rpx;
-  border-right: 4rpx solid #e6e6e6;
 }
 .course .course_main .fitMerchant .main .right {
   padding: 0px 12rpx 0px 40rpx;
+  border-left: 4rpx solid #e6e6e6;
+  padding-left: 55rpx;
 }
 .course .course_main .fitMerchant .site {
   height: 80rpx;
@@ -350,9 +350,9 @@ page {
   width: 6rpx;
   height: 6rpx;
   background-color: #cccccc;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
   margin-right: 20rpx;
+  margin-top: 14rpx;
 }
 .course .course_main .classDetails .top_main .mid {
   color: #333333;

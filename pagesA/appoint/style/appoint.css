@@ -35,3 +35,12 @@ page {
   transform: translateX(-50%);
   bottom: 100rpx;
 }
+.appoint .popup_main {
+  padding-left: 40rpx;
+  padding-top: 40rpx;
+}
+.appoint .popup_main .title {
+  color: #333333;
+  font-size: 36rpx;
+  margin-bottom: 100rpx;
+}

@@ -209,6 +209,10 @@ page {
   font-size: 26rpx;
   padding-bottom: 20rpx;
 }
+.groupPurchase .isLook {
+  max-height: 400rpx;
+  overflow: hidden;
+}
 .groupPurchase .lookMore {
   background-color: #fff;
   padding-top: 34rpx;

@@ -57,14 +57,17 @@ page .index .index_main {
   background-color: #fff;
 }
 page .index .index_main .index_banner {
+  width: 100%;
   height: 300rpx;
-  padding: 20rpx 0rpx;
 }
-page .index .index_main .index_banner .swiper-item {
-  width: 660rpx;
-  padding-left: 30rpx;
+page .index .index_main .index_banner .swiper {
+  width: 100%;
+}
+page .index .index_main .index_banner swiper-item {
+  width: 630rpx !important;
+  padding: 0rpx 15rpx;
   position: relative;
-  left: 30rpx;
+  left: 45rpx;
 }
 page .index .index_main .index_mainType {
   padding: 30rpx;
@@ -115,6 +118,7 @@ page .index .index_main .index_listBox .index_list_top .index_list_top_mid {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 1;
 }
 page .index .index_main .index_listBox .index_list_top .index_list_top_mid .index_list_top_midTitle {
   color: #000;
@@ -139,19 +143,34 @@ page .index .index_main .index_listBox .index_list_top .index_list_top_mid .inde
 page .index .index_main .index_listBox .index_list_top .index_list_top_mid .index_list_top_midType image {
   margin-right: 12rpx;
 }
+page .index .index_main .index_listBox .index_list_top .index_list_top_mid .index_list_top_midType .sate {
+  width: 150rpx;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
 page .index .index_main .index_listBox .index_list_top .index_list_top_mid .index_list_top_midRanking {
   font-size: 18rpx;
   color: #000;
 }
 page .index .index_main .index_listBox .index_list_top .index_list_top_mid .index_list_top_midRanking text {
   display: inline-block;
-  padding: 8rpx 20rpx;
+  padding: 4rpx 20rpx;
   background-color: #f6f6f6;
+  line-height: 26rpx;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
 page .index .index_main .index_listBox .index_list_top .index_list_top_right {
   color: #000;
   font-size: 24rpx;
-  width: 75rpx;
   text-align: right;
 }
 page .index .index_main .index_listBox .index_list_bottom {
@@ -177,4 +196,31 @@ page .index .index_main .index_listBox .index_list_bottom .index_list_bottomRigh
   display: inline-block;
   padding: 6rpx;
   margin-right: 20rpx;
+}
+page .index .mapBox {
+  padding: 50rpx;
+}
+page .index .tabbar {
+  background-color: #fff;
+  border-top: 2rpx solid #9A9A9A;
+  height: 100rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20rpx;
+  color: #9A9A9A;
+}
+page .index .tabbar > view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+page .index .tabbar image {
+  width: 50rpx;
+  height: 50rpx;
+  margin-bottom: 5rpx;
+}
+page .index .tabbar .changeTabbar {
+  color: #47B4B7;
 }

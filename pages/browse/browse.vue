@@ -1,32 +1,16 @@
 <template>
 	<view class="browse">
-		<view class="ul">
-			<view class="li">
-				<image src="../../static/imgs/browse.png" mode="widthFix"></image>
+		
+		<view v-if="!UserFoot.length" style="padding-top: 50rpx;text-align: center;">
+			暂无记录
+		</view>
+		
+		<view class="ul" v-else>
+			<view class="li" v-for="(item,index) in UserFoot" :key="index">
+				<image :src="item.cover" ></image>
 				<view class="r">
-					<view class="name">新东方培训学校</view>
-					<view class="info">为各类职业提供专业的技能培训</view>
-				</view>
-			</view>
-			<view class="li">
-				<image src="../../static/imgs/browse.png" mode="widthFix"></image>
-				<view class="r">
-					<view class="name">新东方培训学校</view>
-					<view class="info">为各类职业提供专业的技能培训</view>
-				</view>
-			</view>
-			<view class="li">
-				<image src="../../static/imgs/browse.png" mode="widthFix"></image>
-				<view class="r">
-					<view class="name">新东方培训学校</view>
-					<view class="info">为各类职业提供专业的技能培训</view>
-				</view>
-			</view>
-			<view class="li">
-				<image src="../../static/imgs/browse.png" mode="widthFix"></image>
-				<view class="r">
-					<view class="name">新东方培训学校</view>
-					<view class="info">为各类职业提供专业的技能培训</view>
+					<view class="name">{{item.name}}</view>
+					<view class="info">{{item.desc}}</view>
 				</view>
 			</view>
 		</view>
@@ -34,7 +18,55 @@
 </template>
 
 <script>
+	import isCode from '../../verify/isCode.js'
+	import { showToast , hideToast } from '../../verify/loading.js'
+	
+	export default {
+		data() {
+			return {
+				UserFoot: []
+			}
+		},
+		methods: {
+			//用户足迹
+			getUserFoot() {
+				let _this = this
+				
+				showToast('加载中...')
+				uni.getStorage({
+					key:'token',
+					success:res => {
+						uni.request({
+							url: _this.apiServer + 'api/user/UserFoot',
+							header: {
+								"token": res.data,
+							},
+							data:{
+								page:1
+							},
+							method:'POST',
+							success: (res) => {
+								console.log( '用户足迹' )
+								console.log( res.data )
+								
+								isCode( res.data.code )
+								
+								_this.UserFoot = res.data.data.list
+							}
+						})
+					}
+				})
+				hideToast()
+				
+			},
+		},
+		onLoad() {
+			//收藏
+			this.getUserFoot()
+		}
+	}
 </script>
+
 
 <style lang="scss">
 	page{
@@ -53,7 +85,8 @@
 				font-size: 0;
 				margin-top: 4rpx;
 				image{
-					width: 210rpx;
+					width: 700rpx;
+					height: 220rpx;
 				}
 				.r{
 					margin-left: 20rpx;

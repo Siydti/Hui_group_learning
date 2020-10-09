@@ -1,31 +1,35 @@
 <template>
 	<view class="evaluate">
 		
-		<view class="main">
+		<view v-if="!UserComment.length" style="padding-top: 50rpx;text-align: center;">
+			小主，没找到关于您的评论记录哦~
+		</view>
+		
+		<view class="main" v-else>
 			
 			<view class="title">
-				评价（267）
+				评价（{{UserComment.length}}）
 			</view>
 			
 			
-			<view class="list">
+			<view class="list" v-for="(item,index) in UserComment" :key="index">
 				
 				<view class="head">
-					<image src="../../static/images/head.png" style="width: 60rpx;height: 60rpx;border-radius: 50%;"></image>
+					<image :src="item.icon" style="width: 60rpx;height: 60rpx;border-radius: 50%;"></image>
 				</view>
 				
 				<view class="content">
 					
 					<view class="name">
-						快乐的小仙女
+						{{item.name}}
 					</view>
 					
 					<view class="time">
-						2019-08-16
+						{{ item.create }}
 					</view>
 					
 					<view :class="{'userSay':'userSay','active': isOpen == '全部' ? 'active' : '' }">
-						这是文本这是文本这是评价这是评价，这是文本这是文本这是评价这是评价，这是文本这是文本这是评价这是评价，这是文本这是文本这是评价这是评价，这是文本这是文本这是评价这是评价，这是文本这是文本这是评价这是评评价这是评价这是文本这是文本这是评价这是评价，这是文本这是文本这是评价这是评价，这是文本这是文本这是评价这是评价，这是文本这是文本这是评价这是评价，这是文本这是文本这是评价这是评价，这是文本这是文本这是评价这是评评价这是评价
+						{{item.content}}
 					</view>
 					
 					<view class="isOpenbtn" @click="isOpenbtn">
@@ -35,7 +39,7 @@
 					<view class="previously">
 						
 						<view class="left">
-							<image src="/static/images/previously.png" style="width: 140rpx;height: 100rpx;border-radius: 10rpx;"></image>
+							<image :src="item.img[0]" style="width: 140rpx;height: 100rpx;border-radius: 10rpx;"></image>
 						</view>
 						
 						<view class="mid">
@@ -63,6 +67,7 @@
 		data() {
 			return {
 				isOpen:'全部',
+				UserComment:[],
 			}
 		},
 		methods: {
@@ -72,7 +77,41 @@
 				}else if( this.isOpen == '收起' ) {
 					this.isOpen = '全部'
 				} 
-			}
+			},
+			
+			//我的评论
+			getUserComment() {
+				let _this = this
+				
+				uni.getStorage({
+					key:'token',
+					success:res => {
+						uni.request({
+							url: _this.apiServer + 'api/user/UserComment',
+							header: {
+								"token": res.data,
+							},
+							data:{
+								page:1
+							},
+							method:'POST',
+							success: (res) => {
+								console.log( '我的评论' )
+								console.log( res.data )
+								
+								isCode( res.data.code )
+								
+								_this.UserComment = res.data.data.list
+							}
+						})
+					}
+				})
+				
+			},
+		},
+		onLoad() {
+			//我的评论
+			this.getUserComment()
 		}
 	}
 </script>

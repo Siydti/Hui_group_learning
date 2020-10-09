@@ -26,8 +26,7 @@
 /* 文章场景相关 */
 .study {
   padding: 20rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .study .phone {
   width: 100rpx;
@@ -63,9 +62,5 @@
 .study .items .info {
   font-size: 24rpx;
   color: #666666;
-  width: 600rpx;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
 }
 

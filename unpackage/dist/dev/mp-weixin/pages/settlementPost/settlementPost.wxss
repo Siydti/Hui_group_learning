@@ -31,16 +31,13 @@ page {
 }
 .settlementPost {
   padding: 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .settlementPost .infos {
   background-color: #FFFFFF;
-  -webkit-border-radius: 20rpx;
-          border-radius: 20rpx;
+  border-radius: 20rpx;
   padding: 30rpx 30rpx 10rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .settlementPost .infos .li {
   display: -webkit-box;
@@ -86,8 +83,7 @@ page {
   width: 160rpx;
   height: 50rpx;
   border: 1px solid #9A9A9A;
-  -webkit-border-radius: 25rpx;
-          border-radius: 25rpx;
+  border-radius: 25rpx;
   font-size: 24rpx;
   color: #9A9A9A;
   text-align: center;
@@ -104,8 +100,7 @@ page {
 .settlementPost .btn {
   width: 100%;
   height: 80rpx;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
   background: rgba(12, 192, 100, 0.7);
   font-size: 30rpx;
   color: #FFFFFF;

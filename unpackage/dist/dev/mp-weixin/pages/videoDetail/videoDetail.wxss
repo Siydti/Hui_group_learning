@@ -29,8 +29,7 @@
 }
 .videoDetail .infos {
   padding: 0 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .videoDetail .infos .name {
   font-size: 30rpx;

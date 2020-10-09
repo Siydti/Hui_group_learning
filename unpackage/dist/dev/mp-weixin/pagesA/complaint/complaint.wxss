@@ -10,8 +10,7 @@ page {
 .complaint .complaint_main {
   width: 620rpx;
   background-color: #fff;
-  -webkit-border-radius: 15rpx;
-          border-radius: 15rpx;
+  border-radius: 15rpx;
   padding: 0px 35rpx;
   padding-bottom: 30rpx;
 }
@@ -34,18 +33,21 @@ page {
   color: #909090;
   font-size: 26rpx;
   border: 1rpx solid #909090;
-  -webkit-border-radius: 5rpx;
-          border-radius: 5rpx;
+  border-radius: 5rpx;
   padding: 10rpx;
   margin-right: 20rpx;
   margin-bottom: 20rpx;
+}
+.complaint .complaint_main .complaint_main_type .active {
+  background-color: #DD524D;
+  color: #fff;
+  border: 0;
 }
 .complaint .complaint_main .complaint_main_textarea {
   width: 618rpx;
   height: 200rpx;
   border: 1rpx solid #9A9A9A;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
 }
 .complaint .complaint_btn {
   width: 690rpx;
@@ -56,7 +58,9 @@ page {
   color: #fff;
   line-height: 80rpx;
   font-size: 30rpx;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
+}
+.complaint .isOk {
+  background-color: #ccc;
 }
 

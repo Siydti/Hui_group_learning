@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "合作管理",
+  "usingComponents": {
+    "van-icon": "/wxcomponents/vant/icon/index"
+  }
+}

@@ -1,5 +1,9 @@
 <template>
 	<view class="order">
+		
+		<view style="flex: 1;overflow: scroll;">
+			
+		
 		<view class="navs">
 			<view :class="index==navsIndex?'li active':'li'" v-for="(item,index) in navs" :key="index" @click="navsClick(index)">
 				<text>{{item}}</text>
@@ -18,13 +22,13 @@
 					<view class="left" @click="goDetail">
 						<image src="../../static/imgs/img.png"></image>
 						<view class="r">
-							<view class="title">英语入门特别简单</view>
+							<view class="title">名字</view>
 							<view class="text">数量：1</view>
 							<view class="text">总价：￥66.6</view>
 							<view class="text">截止日期：2019-08-30</view>
 						</view>
 					</view>
-					<view class="right">
+<!-- 					<view class="right">
 						付款
 					</view>
 				</view>
@@ -65,25 +69,91 @@
 							<view class="text">总价：￥66.6</view>
 							<view class="text">截止日期：2019-08-30</view>
 						</view>
-					</view>
+					</view> -->
 					<!-- <view class="right">
 						付款
 					</view> -->
 				</view>
 			</view>
 		</view>
+		</view>
+	
+		<view class="tabbar">
+			<view @click="changeTabbar(index)" v-for="( item,index ) in tabbar" :key="index" :class="{ 'changeTabbar' : index == activeTabbar }">
+				<image :src="item.iconPath" v-show=" index !== activeTabbar "></image>
+				<image :src="item.selectedIconPath" v-show=" index == activeTabbar "></image>
+				<text>{{ item.text }}</text>
+			</view>
+		</view>
+		
 	</view>
 </template>
 
 <script>
+	
+	
 	export default {
 		data() {
 			return {
-				navs:['全部订单','待付款','我的足迹','待评价'],
-				navsIndex:0
+				navs:['全部','分类1','分类2','分类3'],
+				navsIndex:0,
+				tabbar:[
+					{
+						"iconPath": "/static/images/ICON/home_empty.png",
+						"selectedIconPath": "/static/images/ICON/home_fill.png",
+						"text": "首页"
+					}, {
+						"iconPath": "/static/images/ICON/order_empty.png",
+						"selectedIconPath": "/static/images/ICON/order_fill.png",
+						"text": "订单"
+					}, {
+						"iconPath": "/static/images/ICON/play_empty.png",
+						"selectedIconPath": "/static/images/ICON/play_fill.png",
+						"text": "视频"
+					}, {
+						"iconPath": "/static/images/ICON/me_empty.png",
+						"selectedIconPath": "/static/images/ICON/me_fill.png",
+						"text": "我的"
+					}
+				],
+				activeTabbar: 1,
 			}
 		},
 		methods: {
+			changeTabbar( index ) {
+				console.log( index )
+				
+				if( index == 0 ) {
+					uni.reLaunch({
+						url:'/pages/index/index'
+					})
+				}else if( index == 2 ) {
+					uni.reLaunch({
+						url:'/pages/recordedVideo/recordedVideo'
+					})
+				}else if( index == 3 ) {
+					
+					uni.getStorage({
+						key:'userType',
+						success:res => {
+							if( res.data == 'ordinary' ) { //普通用户
+								uni.reLaunch({
+									url:'/pages/myOrdinary/myOrdinary'
+								})
+							}else if( res.data == 'agent' ) { //代理
+								uni.reLaunch({
+									url:'/pages/myUser/myUser'
+								})
+							}else if( res.data == 'shop' ) { //商家
+								uni.reLaunch({
+									url:'/pages/mybusiness/mybusiness'
+								})
+							}
+						}
+					})
+					
+				}
+			},
 			navsClick:function(index){
 				this.navsIndex=index;
 			},
@@ -104,10 +174,14 @@
 <style lang="scss">
 page{
 	width: 100%;
-	min-height: 100%;
+	height: 100%;
 	background-color: #f2f2f2;
 }
 .order{
+	width: 100%;
+	height: 100%;	
+	display: flex;
+	flex-direction: column;
 	.navs{
 		background: #ffffff;
 		display: flex;
@@ -208,5 +282,35 @@ page{
 			}
 		}
 	}
+
+	.tabbar{
+		background-color: #fff;
+		border-top: 2rpx solid #9A9A9A;
+		height: 100rpx;
+		width: 100%;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		font-size: 20rpx;
+		color: #9A9A9A;
+		
+		>view{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		image{
+			width: 50rpx;
+			height: 50rpx;
+			margin-bottom: 5rpx;
+		}
+		
+		.changeTabbar{
+			color: #47B4B7;
+			
+		}
+	}
+		
 }
 </style>

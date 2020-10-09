@@ -1,0 +1,52 @@
+page {
+  width: 100%;
+  height: 100%;
+}
+.appointSucceed {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  padding-top: 10rpx;
+}
+.appointSucceed .groupSuccess_main {
+  width: 100%;
+  height: 200rpx;
+  padding: 35rpx 0rpx ;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  background-color: #fff;
+}
+.appointSucceed .groupSuccess_main .groupSuccess_main_title {
+  color: #333333;
+  font-size: 34rpx;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+.appointSucceed .groupSuccess_main .groupSuccess_main_hint {
+  font-size: 24rpx;
+  color: #999999;
+}
+.appointSucceed .groupSuccess_main .groupSuccess_main_scholl {
+  color: #333;
+  font-size: 30rpx;
+}
+

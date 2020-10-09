@@ -94,6 +94,10 @@ page{
 				}
 			}
 			
+			.isCollect{
+				color: #FF6634;
+			}
+			
 			.store_titleRight_fixedBox{
 				width: 200rpx;
 				height: 53rpx;
@@ -281,6 +285,7 @@ page{
 					.bottom_left{
 						display: flex;
 						flex-direction: column;
+						flex: 1;
 						
 						.bottom_left_top{
 							color: #999;
@@ -478,11 +483,13 @@ page{
 		.listBox{
 			width: 100%;
 			display: flex;
-			justify-content: space-between;
+			justify-content: flex-start;
 			padding-bottom: 10rpx;
+			overflow-x: scroll;
 			
 			.list{
 				text-align: center;
+				margin-right: 18rpx;
 				
 				.name{
 					color: #1a1a1a;
@@ -806,5 +813,9 @@ page{
 		
 	}
 
-
+	/* 地图弹框 */
+	.mapBox{
+		padding: 50rpx;
+	}
+	
 }

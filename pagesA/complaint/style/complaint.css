@@ -35,6 +35,11 @@ page {
   margin-right: 20rpx;
   margin-bottom: 20rpx;
 }
+.complaint .complaint_main .complaint_main_type .active {
+  background-color: #DD524D;
+  color: #fff;
+  border: 0;
+}
 .complaint .complaint_main .complaint_main_textarea {
   width: 618rpx;
   height: 200rpx;
@@ -51,4 +56,7 @@ page {
   line-height: 80rpx;
   font-size: 30rpx;
   border-radius: 10rpx;
+}
+.complaint .isOk {
+  background-color: #ccc;
 }

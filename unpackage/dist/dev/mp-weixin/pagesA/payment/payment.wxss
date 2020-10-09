@@ -141,8 +141,7 @@ page {
 .payment .payment_payBtn {
   width: 630rpx;
   height: 80rpx;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
   background-color: #0CC064;
   color: #fff;
   text-align: center;
@@ -153,8 +152,7 @@ page {
 .payment .payment_inviteBtn {
   width: 630rpx;
   height: 80rpx;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
   background-color: #9A9A9A;
   color: #343434;
   text-align: center;

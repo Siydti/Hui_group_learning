@@ -26,16 +26,14 @@
 /* 文章场景相关 */
 .withdrawalPost .infos {
   padding: 0 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-top: 20rpx solid #F2F2F2;
 }
 .withdrawalPost .infos .text {
   font-size: 30rpx;
   color: #333333;
   padding: 30rpx 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-bottom: 1px solid #F2F2F2;
 }
 .withdrawalPost .infos .btns {
@@ -45,8 +43,7 @@
   width: 100%;
   height: 80rpx;
   background: #0CBF63;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
   font-size: 30rpx;
   color: #FFFFFF;
   text-align: center;
@@ -96,15 +93,13 @@
   color: #666666;
   line-height: 90rpx;
   padding-left: 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #F2F2F2;
 }
 .withdrawalPost .ul {
   background: #FFFFFF;
   padding: 0 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .withdrawalPost .ul .li {
   display: -webkit-box;
@@ -114,8 +109,7 @@
   -webkit-align-items: center;
           align-items: center;
   padding: 30rpx 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-bottom: 1px solid #F2F2F2;
 }
 .withdrawalPost .ul .li .left {

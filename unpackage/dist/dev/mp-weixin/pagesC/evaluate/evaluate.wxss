@@ -1,0 +1,87 @@
+page {
+  width: 100%;
+  height: 100%;
+}
+.evaluate {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f2f2;
+  padding-top: 20rpx;
+}
+.evaluate .main {
+  background-color: #fff;
+  padding-left: 20rpx;
+  padding-right: 50rpx;
+  padding-bottom: 30rpx;
+}
+.evaluate .main .title {
+  color: #666666;
+  font-size: 26rpx;
+  height: 116rpx;
+  line-height: 87rpx;
+}
+.evaluate .main .list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+}
+.evaluate .main .list .head {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 20rpx;
+}
+.evaluate .main .list .content .name {
+  color: #666666;
+  font-size: 24rpx;
+  margin-bottom: 20rpx;
+}
+.evaluate .main .list .content .time {
+  color: #999999;
+  font-size: 24rpx;
+  margin-bottom: 27rpx;
+}
+.evaluate .main .list .content .userSay {
+  color: #666;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  overflow: hidden;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.evaluate .main .list .content .active {
+  -webkit-line-clamp: 5;
+}
+.evaluate .main .list .content .isOpenbtn {
+  color: #47B4B7;
+  font-size: 24rpx;
+  padding-top: 40rpx;
+  padding-bottom: 30rpx;
+}
+.evaluate .main .list .content .previously {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  background-color: #f2f2f2;
+  width: 550rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+}
+.evaluate .main .list .content .previously .left {
+  width: 140rpx;
+  height: 100rpx;
+  margin-right: 20rpx;
+}
+.evaluate .main .list .content .previously .mid {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+}
+.evaluate .main .list .content .previously .right {
+  color: #333333;
+  font-size: 22rpx;
+  padding-top: 20rpx;
+}
+

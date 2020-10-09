@@ -33,8 +33,7 @@ page {
   margin: 10rpx 0 20rpx;
   background: #FFFFFF;
   padding: 20rpx 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 0;
   display: -webkit-box;
   display: -webkit-flex;
@@ -47,8 +46,7 @@ page {
   width: 220rpx;
   height: 160rpx;
   margin-right: 20rpx;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
 }
 .confrimOrder .info text {
   font-size: 30rpx;
@@ -65,8 +63,7 @@ page {
   -webkit-justify-content: space-between;
           justify-content: space-between;
   padding: 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #FFFFFF;
 }
 .confrimOrder .li .left {
@@ -115,8 +112,7 @@ page {
   width: 630rpx;
   height: 80rpx;
   background: #0CBF63;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
   text-align: center;
   line-height: 80rpx;
   font-size: 30rpx;

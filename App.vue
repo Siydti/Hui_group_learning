@@ -1,7 +1,17 @@
 <script>
+import getUserType from './verify/getUserType.js'
+
 	export default {
 		onLaunch: function() {
 			console.log('App Launch')
+			//获取用户类型
+			uni.getStorage({
+				key: 'token',
+				success:res => {
+					getUserType( res.data )
+				}
+			})
+			
 		},
 		onShow: function() {
 			console.log('App Show')

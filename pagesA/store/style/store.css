@@ -10,6 +10,7 @@ page {
   justify-content: space-between;
   /* 分享弹框 */
   /* 海报弹框 */
+  /* 地图弹框 */
 }
 .store .store_banner {
   width: 100%;
@@ -82,6 +83,9 @@ page {
 }
 .store .store_title .store_titleRight view image {
   margin-bottom: 5rpx;
+}
+.store .store_title .store_titleRight .isCollect {
+  color: #FF6634;
 }
 .store .store_title .store_titleRight .store_titleRight_fixedBox {
   width: 200rpx;
@@ -242,6 +246,7 @@ page {
 .store .store_groupBuy .store_groupBuy_list .store_groupBuy_listRight .bottom .bottom_left {
   display: flex;
   flex-direction: column;
+  flex: 1;
 }
 .store .store_groupBuy .store_groupBuy_list .store_groupBuy_listRight .bottom .bottom_left .bottom_left_top {
   color: #999;
@@ -404,6 +409,7 @@ page {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10rpx;
+  overflow-x: scroll;
 }
 .store .store_teachers .listBox .list {
   text-align: center;
@@ -672,4 +678,7 @@ page {
   line-height: 60rpx;
   margin: auto;
   margin-top: 20rpx;
+}
+.store .mapBox {
+  padding: 50rpx;
 }

@@ -252,6 +252,10 @@ page{
 		}
 	}
 
+	.isLook{
+		max-height: 400rpx;
+		overflow: hidden;
+	}
 
 	.lookMore{
 		background-color: #fff;
@@ -536,9 +540,13 @@ page{
 		
 		.join_listBox{
 			display: flex;
-			justify-content: space-between;
+			justify-content: flex-start;
 			width: 550rpx;
 			
+			.join_list{
+				margin-right: 28rpx;
+			}
+			 
 			.join_listLeader::after{
 				content: '团长';
 				height: 20rpx;

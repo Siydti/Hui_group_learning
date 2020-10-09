@@ -26,8 +26,7 @@
 /* 文章场景相关 */
 .schoolType .ul {
   padding: 20rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   display: -webkit-box;
   display: -webkit-flex;
   display: flex;
@@ -41,8 +40,7 @@
   width: 130rpx;
   height: 50rpx;
   background: #F6F6F6;
-  -webkit-border-radius: 25rpx;
-          border-radius: 25rpx;
+  border-radius: 25rpx;
   font-size: 22rpx;
   color: #000000;
   text-align: center;
@@ -72,8 +70,7 @@
   width: 690rpx;
   height: 80rpx;
   background: #0CC064;
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  border-radius: 10rpx;
   font-size: 30rpx;
   color: #FFFFFF;
   text-align: center;

@@ -1,20 +1,24 @@
 <template>
 	<view class="collect">
 		
-		<view class="list" v-for="(item,index) in contentList" :key="index">
-			
-			<image src="/static/images/collect_listHead.png" style="width: 260rpx;height: 203rpx;border-radius: 15rpx;margin-right: 20rpx;"></image>
-			
+		<view v-if="!UserCollection.length" style="padding-top: 50rpx;text-align: center;">
+			暂无收藏
+		</view>
+		
+		<view class="list" v-for="(item,index) in UserCollection" :key="index" v-else>
+
+			<image :src="item.cover" style="width: 260rpx;height: 203rpx;border-radius: 15rpx;margin-right: 20rpx;"></image>
+
 			<view class="main">
-				
+
 				<view class="title">
-					WhenArt那时画室儿童小区WhenArt那时画室儿童小区
+					{{ item.name }}
 				</view>
-				
+
 				<view class="type">
-					美术培训
+					{{ item.desc }}
 				</view>
-				
+
 				<view class="topBox">
 					<view class="left">
 						<image src="/static/images/-e-hongbao (1).png" style="width: 22rpx;height: 28rpx;margin-right: 10rpx;"></image>
@@ -26,7 +30,7 @@
 						<text>276</text>
 					</view>
 				</view>
-				
+
 				<view class="bottomBox">
 					<view class="left">
 						<text class="new_price">￥990</text>
@@ -40,27 +44,61 @@
 						>640.7km
 					</view>
 				</view>
-				
+
 			</view>
-			
+
 		</view>
-		
+
 	</view>
 </template>
 
 <script>
+	import isCode from '../../verify/isCode.js'
+	
 	export default {
 		data() {
 			return {
-				contentList:[1,2,3]
+				UserCollection: []
 			}
 		},
 		methods: {
-			
+			//收藏
+			getUserInfo() {
+				let _this = this
+				
+				uni.getStorage({
+					key:'token',
+					success:res => {
+						uni.request({
+							url: _this.apiServer + 'api/user/UserCollection',
+							header: {
+								"token": res.data,
+							},
+							data:{
+								page:1
+							},
+							method:'POST',
+							success: (res) => {
+								console.log( '收藏' )
+								console.log( res.data )
+								
+								isCode( res.data.code )
+								
+								_this.UserCollection = res.data.data.list
+							}
+						})
+					}
+				})
+				
+			},
+		},
+		onLoad() {
+			//收藏
+			this.getUserInfo()
 		}
 	}
 </script>
 
 <style>
-@import url("./style/collect.css");
+	@import url("./style/collect.css");
 </style>

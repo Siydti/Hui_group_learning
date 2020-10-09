@@ -26,8 +26,7 @@
 /* 文章场景相关 */
 .track .item {
   padding: 0 30rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .track .item .title {
   font-size: 30rpx;
@@ -35,13 +34,10 @@
   padding: 30rpx 0;
 }
 .track .item .box {
-  -webkit-box-shadow: 0px 2px 10rpx 0px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 2px 10rpx 0px rgba(0, 0, 0, 0.1);
-  -webkit-border-radius: 10rpx;
-          border-radius: 10rpx;
+  box-shadow: 0px 2px 10rpx 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10rpx;
   padding: 30rpx 40rpx 30rpx 10rpx;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 .track .item .box .info {
   display: -webkit-box;
@@ -55,8 +51,7 @@
 .track .item .box .info image {
   width: 80rpx;
   height: 80rpx;
-  -webkit-border-radius: 50%;
-          border-radius: 50%;
+  border-radius: 50%;
 }
 .track .item .box .info .right {
   margin-left: 20rpx;

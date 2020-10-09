@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "评论",
+  "usingComponents": {
+    "van-rate": "/wxcomponents/vant/rate/index"
+  }
+}
