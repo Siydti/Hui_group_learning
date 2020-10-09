@@ -42,7 +42,7 @@
 
 		<view class="payment_groupNumber payment_list">
 			<view class="left">
-				选择拼图人数
+				选择拼团人数
 			</view>
 			<view class="right">
 				<van-stepper value="1" integer button-size="50rpx" input-width="70rpx" />
