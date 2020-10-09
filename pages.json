@@ -1,199 +1,199 @@
 {
 	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
-		{
-			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "慧团学",
-				"usingComponents": {
-				  "van-icon": "/wxcomponents/vant/icon/index",
-				  "van-rate": "/wxcomponents/vant/rate/index"
+			{
+				"path": "pages/index/index",
+				"style": {
+					"navigationBarTitleText": "慧团学",
+					"usingComponents": {
+					  "van-icon": "/wxcomponents/vant/icon/index",
+					  "van-rate": "/wxcomponents/vant/rate/index"
+					}
+				}
+			},
+			{
+				"path": "pages/orderForm/orderForm",
+				"style": {
+					"navigationBarTitleText": "订单",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path":"pages/postComments/postComments",
+				"style": {
+					"navigationBarTitleText": "发布评论",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path":"pages/orderDetail/orderDetail",
+				"style": {
+					"navigationBarTitleText": "订单详情",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/recordedVideo/recordedVideo",
+				"style": {
+					"navigationBarTitleText": "录播",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/videoDetail/videoDetail",
+				"style": {
+					"navigationBarTitleText": "录播",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/confrimOrder/confrimOrder",
+				"style": {
+					"navigationBarTitleText": "确认订单",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/mechanism/mechanism",
+				"style": {
+					"navigationBarTitleText": "分管机构",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/track/track",
+				"style": {
+					"navigationBarTitleText": "客户跟踪",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/developmentAgency/developmentAgency",
+				"style": {
+					"navigationBarTitleText": "发展代理",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/withdrawal/withdrawal",
+				"style": {
+					"navigationBarTitleText": "提现",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/withdrawalPost/withdrawalPost",
+				"style": {
+					"navigationBarTitleText": "提现",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/detailed/detailed",
+				"style": {
+					"navigationBarTitleText": "明细",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/study/study",
+				"style": {
+					"navigationBarTitleText": "学习资料",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/agentPost/agentPost",
+				"style": {
+					"navigationBarTitleText": "代理申请",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/corporateTransfer/corporateTransfer",
+				"style": {
+					"navigationBarTitleText": "对公转账",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/cooperationList/cooperationList",
+				"style": {
+					"navigationBarTitleText": "合作列表",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/schoolType/schoolType",
+				"style": {
+					"navigationBarTitleText": "学校类型",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/walletDetail/walletDetail",
+				"style": {
+					"navigationBarTitleText": "红包明细",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/settlementPost/settlementPost",
+				"style": {
+					"navigationBarTitleText": "入驻申请",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/browse/browse",
+				"style": {
+					"navigationBarTitleText": "浏览记录",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/recharge/recharge",
+				"style": {
+					"navigationBarTitleText": "充值",
+					"navigationBarBackgroundColor": "#FFFFFF"
+				}
+			},
+			{
+				"path": "pages/customerManagement/customerManagement",//客户管理
+				"style": {
+					"navigationStyle":"custom"
+				}
+			},
+			{
+				"path": "pages/myOrdinary/myOrdinary",//我的普通用户
+				"style": {
+					"navigationStyle":"custom"
+				}
+			},
+			{
+				"path": "pages/mybusiness/mybusiness",//我的商家用户
+				"style": {
+					"navigationStyle":"custom"
+				}
+			},
+			{
+				"path": "pages/myUser/myUser",//我的代理用户
+				"style": {
+					"navigationStyle":"custom"
+				}
+			},
+			{
+				"path": "pages/myRegion/myRegion",//我的区域代理用户
+				"style": {
+					"navigationStyle":"custom"
+				}
+			},
+			{
+				"path": "pages/my/my",
+				"style": {
+					"navigationBarTitleText": "我的"
 				}
 			}
-		},
-		{
-			"path": "pages/orderForm/orderForm",
-			"style": {
-				"navigationBarTitleText": "订单",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path":"pages/postComments/postComments",
-			"style": {
-				"navigationBarTitleText": "发布评论",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path":"pages/orderDetail/orderDetail",
-			"style": {
-				"navigationBarTitleText": "订单详情",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/recordedVideo/recordedVideo",
-			"style": {
-				"navigationBarTitleText": "录播",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/videoDetail/videoDetail",
-			"style": {
-				"navigationBarTitleText": "录播",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/confrimOrder/confrimOrder",
-			"style": {
-				"navigationBarTitleText": "确认订单",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/mechanism/mechanism",
-			"style": {
-				"navigationBarTitleText": "分管机构",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/track/track",
-			"style": {
-				"navigationBarTitleText": "客户跟踪",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/developmentAgency/developmentAgency",
-			"style": {
-				"navigationBarTitleText": "发展代理",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/withdrawal/withdrawal",
-			"style": {
-				"navigationBarTitleText": "提现",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/withdrawalPost/withdrawalPost",
-			"style": {
-				"navigationBarTitleText": "提现",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/detailed/detailed",
-			"style": {
-				"navigationBarTitleText": "明细",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/study/study",
-			"style": {
-				"navigationBarTitleText": "学习资料",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/agentPost/agentPost",
-			"style": {
-				"navigationBarTitleText": "代理申请",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/corporateTransfer/corporateTransfer",
-			"style": {
-				"navigationBarTitleText": "对公转账",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/cooperationList/cooperationList",
-			"style": {
-				"navigationBarTitleText": "合作列表",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/schoolType/schoolType",
-			"style": {
-				"navigationBarTitleText": "学校类型",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/walletDetail/walletDetail",
-			"style": {
-				"navigationBarTitleText": "红包明细",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/settlementPost/settlementPost",
-			"style": {
-				"navigationBarTitleText": "入驻申请",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/browse/browse",
-			"style": {
-				"navigationBarTitleText": "浏览记录",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/recharge/recharge",
-			"style": {
-				"navigationBarTitleText": "充值",
-				"navigationBarBackgroundColor": "#FFFFFF"
-			}
-		},
-		{
-			"path": "pages/customerManagement/customerManagement",//客户管理
-			"style": {
-				"navigationStyle":"custom"
-			}
-		},
-		{
-			"path": "pages/myOrdinary/myOrdinary",//我的普通用户
-			"style": {
-				"navigationStyle":"custom"
-			}
-		},
-		{
-			"path": "pages/mybusiness/mybusiness",//我的商家用户
-			"style": {
-				"navigationStyle":"custom"
-			}
-		},
-		{
-			"path": "pages/myUser/myUser",//我的代理用户
-			"style": {
-				"navigationStyle":"custom"
-			}
-		},
-		{
-			"path": "pages/myRegion/myRegion",//我的区域代理用户
-			"style": {
-				"navigationStyle":"custom"
-			}
-		},
-		{
-			"path": "pages/my/my",
-			"style": {
-				"navigationBarTitleText": "我的"
-			}
-		}
-	], 
+		],
 	 "subPackages": [{
         "root": "pagesA",
         "pages": [{
@@ -201,10 +201,11 @@
             "style": { 
 				"usingComponents": {
 				  "van-rate": "/wxcomponents/vant/rate/index",
-				  "van-popup": "/wxcomponents/vant/popup/index"
+				  "van-popup": "/wxcomponents/vant/popup/index",
+				    "van-icon": "/wxcomponents/vant/icon/index"
 				}
 			}
-        }    ,{
+        },{
                     "path" : "complaint/complaint",
                     "style" : {
 						"navigationBarTitleText": "申请投诉"
@@ -212,7 +213,14 @@
                 }
                 ,{
                     "path" : "course/course",
-                    "style" : {}
+                    "style" : {
+						"usingComponents": {
+						  "van-rate": "/wxcomponents/vant/rate/index",
+						  "van-icon": "/wxcomponents/vant/icon/index",
+						  "van-tab": "/wxcomponents/vant/tab/index",
+						  "van-tabs": "/wxcomponents/vant/tabs/index"
+						}
+					}
                 }
                 ,{
                     "path" : "appoint/appoint",
@@ -233,11 +241,93 @@
                 ,{
                     "path" : "groupPurchase/groupPurchase",
                     "style" : {
-						
+						"usingComponents": {
+						  "van-popup": "/wxcomponents/vant/popup/index",
+						   "van-icon": "/wxcomponents/vant/icon/index",
+						    "van-stepper": "/wxcomponents/vant/stepper/index",
+							"van-tab": "/wxcomponents/vant/tab/index",
+							"van-tabs": "/wxcomponents/vant/tabs/index",
+							"van-rate": "/wxcomponents/vant/rate/index"
+						}
+					}
+                }
+                ,{
+                    "path" : "groupSuccess/groupSuccess",
+                    "style" : {
+						"navigationBarTitleText": "拼团成功"
+					}
+                }
+                ,{
+                    "path" : "appointSucceed/appointSucceed",
+                    "style" : {
+						"navigationBarTitleText": "预约成功"
+					}
+                }
+                ,{
+                    "path" : "customerInput/customerInput",
+                    "style" : {
+						"navigationBarTitleText": "客户录入"
+					}
+                }
+                ,{
+                    "path" : "teachers/teachers",
+                    "style" : {
+						"navigationBarTitleText": "全部老师"
+					}
+                }
+                ,{
+                    "path" : "comment/comment",
+                    "style" : {
+						"navigationBarTitleText": "评论",
+						"usingComponents": {
+						  "van-rate": "/wxcomponents/vant/rate/index"
+						}
+					}
+                }
+                ,{
+                    "path" : "active/active",
+                    "style" : {
+						"navigationBarTitleText": "活动",
+						"usingComponents": {
+						  "van-icon": "/wxcomponents/vant/icon/index"
+						}
 					}
                 }
             ]
-    }],
+    },{
+		"root": "pagesC",
+		"pages": [{
+                    "path" : "evaluate/evaluate",
+                    "style" : {
+						"navigationBarTitleText": "我的评价"
+					}
+                }
+                ,{
+                    "path" : "cooperativeManagement/cooperativeManagement",
+                    "style" : {
+						"navigationBarTitleText": "合作管理",
+						"usingComponents": {
+						  "van-icon": "/wxcomponents/vant/icon/index"
+						}
+					}
+                }
+                ,{
+                    "path" : "cooperative/cooperative",
+                    "style" : {
+						"navigationBarTitleText": "我要合作"
+					}
+                }
+                ,{
+                    "path" : "collect/collect",
+                    "style" : {
+						"navigationBarTitleText": "收藏",
+						"usingComponents": {
+						  "van-icon": "/wxcomponents/vant/icon/index"
+						}
+					}
+                }
+            ]
+	}],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "",
@@ -251,34 +341,24 @@
 	    "backgroundColor": "#ffffff",
 	    "list": [{
 	        "pagePath": "pages/index/index",
-	        "iconPath": "static/images/-e-首页.png",
-	        "selectedIconPath": "static/images/-e-首页.png",
+	        "iconPath": "/static/images/ICON/home_empty.png",
+	        "selectedIconPath": "/static/images/ICON/home_fill.png",
 	        "text": "首页"
 	    }, {
 	        "pagePath": "pages/orderForm/orderForm",
-	        "iconPath": "static/images/-e-dingdan-.png",
-	        "selectedIconPath": "./static/images/-e-dingdan-.png",
+	        "iconPath": "static/images/ICON/order_empty.png",
+	        "selectedIconPath": "static/images/ICON/order_fill.png",
 	        "text": "订单"
 	    }, {
 	        "pagePath": "pages/recordedVideo/recordedVideo",
-	        "iconPath": "static/images/-e-video-.png",
-	        "selectedIconPath": "static/images/video-.png",
+	        "iconPath": "static/images/ICON/play_empty.png",
+	        "selectedIconPath": "static/images/ICON/play_fill.png",
 	        "text": "录播"
 	    }, {
-	        "pagePath": "pages/mybusiness/mybusiness",
-	        "iconPath": "./static/images/-e-wode.png",
-	        "selectedIconPath": "static/images/-e-wode.png",
+	        "pagePath": "pages/my/my",
+	        "iconPath": "static/images/ICON/me_empty.png",
+	        "selectedIconPath": "static/images/ICON/me_fill.png",
 	        "text": "我的"
 	    }]
-	},
-	"condition" : { //模式配置，仅开发期间生效
-		"current": 0, //当前激活的模式(list 的索引项)
-		"list": [
-			{
-				"name": "test", //模式名称
-				"path": "pages/index/index", //启动页面，必选
-				"query": "" //启动参数，在页面的onLoad函数里面得到
-			}
-		]
 	}
 }
