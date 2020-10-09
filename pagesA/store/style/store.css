@@ -207,7 +207,7 @@ page {
 .store .store_groupBuy .store_groupBuy_list {
   display: flex;
   height: 128rpx;
-  margin-bottom: 14rpx;
+  margin-bottom: 20rpx;
 }
 .store .store_groupBuy .store_groupBuy_list .store_groupBuy_listLeft {
   width: 128rpx;
@@ -229,10 +229,10 @@ page {
   flex: 1;
 }
 .store .store_groupBuy .store_groupBuy_list .store_groupBuy_listRight .top {
-  font-size: 24rpx;
+  font-size: 28rpx;
   color: #000;
   font-weight: bold;
-  padding-left: 20rpx;
+  padding-left: 16rpx;
   margin-bottom: 16rpx;
 }
 .store .store_groupBuy .store_groupBuy_list .store_groupBuy_listRight .bottom {
@@ -244,12 +244,114 @@ page {
   flex-direction: column;
 }
 .store .store_groupBuy .store_groupBuy_list .store_groupBuy_listRight .bottom .bottom_left .bottom_left_top {
-  color: #585858;
-  font-size: 18rpx;
-  margin-bottom: 20rpx;
+  color: #999;
+  font-size: 22rpx;
+  margin-bottom: 10rpx;
 }
 .store .store_groupBuy .store_groupBuy_list .store_groupBuy_listRight .bottom .bottom_left .bottom_left_top text {
   margin: 0px 5rpx;
+}
+.store .store_groupBuy .store_groupBuy_list .store_groupBuy_listRight .bottom .bottom_left .bottom_right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.store .store_groupBuy .wire {
+  height: 20rpx;
+  border-bottom: 1rpx solid #ccc;
+}
+.store .store_groupBuy .store_groupBuy_more {
+  height: 97rpx;
+  line-height: 97rpx;
+  color: #808080;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.store .store_course {
+  padding: 0px 36rpx;
+}
+.store .store_course .store_course_title {
+  font-size: 30rpx;
+  color: #000;
+  font-weight: bold;
+  margin-bottom: 35rpx;
+}
+.store .store_course .store_course_list {
+  width: 327rpx;
+  height: 330rpx;
+  border: 1rpx solid #e6e6e6;
+  border-radius: 6px;
+  margin-bottom: 30rpx;
+}
+.store .store_course .store_course_list .store_course_top {
+  width: 325rpx;
+  height: 165rpx;
+  position: relative;
+}
+.store .store_course .store_course_list .store_course_top .active_type {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-size: 18rpx;
+  background: linear-gradient(-55deg, #ea4927 50%, #ed7754 500%);
+  padding: 2rpx 8rpx;
+  border-radius: 10rpx 0px 10rpx 0rpx ;
+}
+.store .store_course .store_course_list .store_course_bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0px 18rpx;
+  height: 164rpx;
+}
+.store .store_course .store_course_list .store_course_bottom .title {
+  color: #000;
+  font-size: 26rpx;
+  font-weight: bold;
+}
+.store .store_course .store_course_list .store_course_bottom .type {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #737373;
+  font-size: 20rpx;
+}
+.store .store_course .store_course_list .store_course_bottom .type view {
+  display: flex;
+  align-items: center;
+}
+.store .store_course .store_course_list .store_course_bottom .type view van-icon {
+  margin-right: 10rpx;
+  font-size: 28rpx;
+}
+.store .store_course .store_course_list .store_course_bottom .price {
+  color: #ec6b3d;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.store .store_course .store_course_list .store_course_bottom .price text {
+  margin-right: 5rpx;
+}
+.store .store_course .mrr20 {
+  margin-right: 20rpx;
+}
+.store .store_course .wire {
+  height: 20rpx;
+  width: 100%;
+  border-bottom: 1rpx solid #ccc;
+}
+.store .store_course .store_course_more {
+  height: 97rpx;
+  width: 100%;
+  line-height: 97rpx;
+  color: #808080;
+  font-size: 28rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .store .store_bottom {
   height: 100rpx;
@@ -273,6 +375,200 @@ page {
   text-align: center;
   line-height: 100rpx;
   flex: 1;
+}
+.store .store_teachers {
+  padding: 0px 30rpx;
+}
+.store .store_teachers .title {
+  height: 90rpx;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.store .store_teachers .title .left {
+  color: #010101;
+  font-size: 34rpx;
+  padding-left: 6rpx;
+}
+.store .store_teachers .title .left text {
+  font-size: 26rpx;
+  margin-left: 10rpx;
+}
+.store .store_teachers .title .right {
+  font-size: 22rpx;
+  color: #999999;
+}
+.store .store_teachers .listBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10rpx;
+}
+.store .store_teachers .listBox .list {
+  text-align: center;
+}
+.store .store_teachers .listBox .list .name {
+  color: #1a1a1a;
+  font-size: 28rpx;
+  font-weight: bold;
+  margin-top: 16rpx;
+  margin-bottom: 10rpx;
+}
+.store .store_teachers .listBox .list .type,
+.store .store_teachers .listBox .list .years {
+  color: #808080;
+  font-size: 24rpx;
+  margin-bottom: 10rpx;
+}
+.store .customerInput {
+  position: absolute;
+  right: 20rpx;
+  top: -40rpx;
+  width: 80rpx;
+  height: 80rpx;
+  padding: 10rpx;
+  border-radius: 50%;
+  background-color: #47b4b7;
+  color: #fff;
+  font-size: 30rpx;
+  text-align: center;
+}
+.store .store_evaluate {
+  padding: 0px 26rpx;
+}
+.store .store_evaluate .title {
+  display: flex;
+  height: 90rpx;
+  justify-content: space-between;
+  align-items: center;
+}
+.store .store_evaluate .title .left {
+  color: #010101;
+  font-size: 32rpx;
+}
+.store .store_evaluate .title .left text {
+  font-size: 28rpx;
+  margin-left: 10rpx;
+}
+.store .store_evaluate .title .right {
+  color: #000000;
+  font-size: 28rpx;
+}
+.store .store_evaluate .typeBox .type {
+  display: inline-block;
+  margin: 0px 10rpx 20rpx;
+  border-radius: 42rpx;
+  background-color: #f3f3f3;
+  color: #000;
+  font-size: 20rpx;
+  padding: 10rpx 28rpx;
+}
+.store .store_evaluate .listBox {
+  display: flex;
+}
+.store .store_evaluate .listBox .head {
+  position: relative;
+}
+.store .store_evaluate .listBox .head .vip_logo {
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  right: 0;
+  top: 44rpx;
+}
+.store .store_evaluate .listBox .content {
+  margin-left: 16rpx;
+}
+.store .store_evaluate .listBox .content .title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 24rpx;
+  margin-top: 5rpx;
+  margin-bottom: 20rpx;
+}
+.store .store_evaluate .listBox .content .title text:nth-child(1) {
+  color: #3a5575;
+  font-size: 24rpx;
+  margin-right: 14rpx;
+}
+.store .store_evaluate .listBox .content .title text:nth-child(2) {
+  background-color: #f0be41;
+  border-radius: 25rpx;
+  border: 1rpx solid #e0ae30;
+  font-size: 16rpx;
+  color: #ffffff;
+  padding: 5rpx 10rpx ;
+}
+.store .store_evaluate .listBox .content .time {
+  color: #999999;
+  font-size: 20rpx;
+  margin-bottom: 20rpx;
+}
+.store .store_evaluate .listBox .content .remarkBox .remark {
+  display: inline-block;
+  color: #ec6b3d;
+  border: 1rpx solid #ec6b3d;
+  font-size: 20rpx;
+  padding: 8rpx 10rpx;
+  border-radius: 4rpx;
+  margin-bottom: 12rpx ;
+  margin-right: 20rpx;
+}
+.store .store_evaluate .listBox .content .grade {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 34rpx;
+}
+.store .store_evaluate .listBox .content .grade text {
+  color: #000;
+  font-size: 24rpx;
+  margin-right: 10rpx;
+}
+.store .store_evaluate .listBox .content .describe {
+  color: #000000;
+  font-size: 24rpx;
+  line-height: 33rpx;
+  margin-bottom: 15rpx;
+}
+.store .store_evaluate .listBox .content .imgListBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 50rpx;
+}
+.store .store_evaluate .listBox .content .imgListBox .imgList {
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 4rpx;
+}
+.store .store_evaluate .listBox .content .imgListBox .imgNumberBox {
+  position: absolute;
+  bottom: 10rpx;
+  right: 10rpx;
+  background-color: rgba(1, 1, 1, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rpx 18rpx;
+  border-radius: 34rpx;
+}
+.store .store_evaluate .listBox .content .imgListBox .imgNumberBox text {
+  color: #fff;
+  font-size: 22rpx;
+  margin-left: 10rpx;
+}
+.store .store_evaluate .lookMore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #000;
+  font-size: 26rpx;
+  height: 80rpx;
+  font-weight: bold;
 }
 .store .share_box {
   position: fixed;

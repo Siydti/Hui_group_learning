@@ -400,6 +400,175 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 var _default =
 {
   data: function data() {
@@ -407,6 +576,15 @@ var _default =
       interval: 2000, //自动切换时间间隔
       duration: 500, //滑动动画时长
       videoList: [1, 2, 3, 4, 5, 6, 7],
+      groupBuyList: [1, 2, 3],
+      courseList: [1, 2, 3, 4],
+      teacherList: [1, 2, 3, 4],
+      evaluateList: [
+      { id: 1, content: '体验课 (4)' },
+      { id: 1, content: '老师超赞 (5)' },
+      { id: 1, content: '环境很好 (6)' }],
+
+      imgList: [1, 2, 3],
       shareShow: false,
       posterShow: false };
 
@@ -443,6 +621,11 @@ var _default =
     go_teachers: function go_teachers() {
       uni.navigateTo({
         url: '/pagesA/teachers/teachers' });
+
+    },
+    go_comment: function go_comment() {
+      uni.navigateTo({
+        url: '/pagesA/comment/comment' });
 
     } } };exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))

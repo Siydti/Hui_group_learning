@@ -1,0 +1,126 @@
+page{
+	width: 100%;
+	height: 100%;
+}
+
+.comment{
+	width: 100%;
+	height: 100%;
+	
+	.type{
+		padding: 30rpx;
+		
+		.list{
+			display: inline-block;
+			background-color: #f4f4f4;
+			padding: 14rpx 26rpx;
+			margin-right: 10rpx;
+			margin-bottom: 16rpx;
+			border-radius: 50rpx;
+			font-size: 22rpx;
+		}
+		
+		.active{
+			background-color: #fcf0eb;
+			color: #e84e16;
+		}
+	}
+
+
+	.partition{
+		background-color: #f6f6f6;
+		width: 100%;
+	}
+
+
+	.main{
+		padding: 20rpx 40rpx;
+		padding-bottom: 0;
+		
+		.list{
+			
+			.head{
+				display: flex;
+				align-items: center;
+				
+				.left{
+					width: 80rpx;
+					height: 80rpx;
+					margin-right: 20rpx;
+					position: relative;
+				}
+				
+				.right{
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					height: 80rpx;
+					
+					.top{
+						font-size: 28rpx;
+						color: #6e849d;
+						
+						text{
+							display: inline-block;
+							background-color: #f0be42;
+							color: #fff;
+							font-size: 20rpx;
+							padding: 4rpx 10rpx;
+							border-radius: 20rpx;
+							margin-left: 15rpx;
+							font-weight: bold;
+						}
+					}
+					
+					.bottom{
+						font-size: 20rpx;
+						color: #d7d7d7;
+					}
+				}
+			}
+		
+			.score{
+				height: 50rpx;
+				display: flex;
+				align-items: center;
+				
+				text{
+					color: #000;
+					font-size: 26rpx;
+					margin-right: 15rpx;
+				}
+			}
+		
+			.content{
+				overflow: hidden;
+				font-size: 26rpx;
+				line-height: 40rpx;
+				word-break: break-all;
+				text-overflow: ellipsis;
+				display: -webkit-box; 
+				-webkit-box-orient: vertical;
+			}
+			
+			.active{
+				-webkit-line-clamp: 5;
+			}
+		
+		}
+	}
+	
+	.isOpenbtn{
+		color: #6e849d;
+		font-size: 26rpx;
+		line-height: 40rpx;
+	}
+
+
+	.picture{
+		width: 100%;
+		border-radius: 20rpx 20rpx 50rpx 50rpx;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		overflow: hidden;
+	}
+}
