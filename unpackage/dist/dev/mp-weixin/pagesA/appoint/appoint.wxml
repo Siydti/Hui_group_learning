@@ -1,1 +1,0 @@
-<view class="appoint"><view class="appoint_title">预约后我们将通过电话联系您</view><input class="appoint_input" type="number" placeholder="请输入您的电话号码"/><view data-event-opts="{{[['tap',[['go_appointSucceed',['$event']]]]]}}" class="appoint_btn" bindtap="__e">立即预约</view></view>

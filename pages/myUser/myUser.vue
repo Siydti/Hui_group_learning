@@ -8,51 +8,51 @@
 			</view>
 		</view>
 		<view class="navs">
-			<view class="li">
+			<navigator class="li"  hover-class="none">
 				<view class="iconfont iconwuxing"></view>
 				<text>收藏</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none">
 				<view class="iconfont iconpinglun" style="color: #2DAEE0;"></view>
 				<text>评价</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none" >
 				<view class="iconfont iconshijian" style="color: #FF909E;"></view>
 				<text>最近浏览</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none">
 				<view class="iconfont iconusers" style="color:#6DA4FC;"></view>
 				<text>发展推客</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none">
 				<view class="iconfont iconguanliyuan" style="color: #A18CD1;"></view>
 				<text>客户管理</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none">
 				<view class="iconfont icongenzongmubiaoshezhi" style="color: #47B4B7;"></view>
 				<text>客户跟踪</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none">
 				<view class="iconfont iconhezuo" style="color: #61C28E;"></view>
 				<text>我要合作</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none">
 				<view class="iconfont iconkaifa___" style="color: #F19A3E;"></view>
 				<text>软件开发</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none">
 				<view class="iconfont iconshipin-tianchong" style="color: #EDBE2F;"></view>
 				<text>视频制作</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li"  hover-class="none">
 				<view class="iconfont iconziliaoku" style="color: #7183C1;"></view>
 				<text>学习资料</text>
-			</view>
-			<view class="li">
+			</navigator>
+			<navigator class="li" hover-class="none"> 
 				<view class="iconfont icontongzhi" style="color: #3978A4;"></view>
 				<text>系统通知</text>
 				<view class="num">2</view>
-			</view>
+			</navigator>
 		</view>
 		<view class="box">
 			<view class="title">我的团队</view>
