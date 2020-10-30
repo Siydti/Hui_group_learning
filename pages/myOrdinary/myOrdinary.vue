@@ -11,6 +11,7 @@
 			</view>
 		</view>
 		<view class="navs">
+<<<<<<< HEAD
 			<navigator class="li"  hover-class="none" url="/pagesC/collect/collect">
 				<view class="iconfont iconwuxing"></view>
 				<text>收藏</text>
@@ -32,6 +33,29 @@
 				<text>软件开发</text>
 			</navigator>
 			<navigator class="li"  hover-class="none" url="../study/study">
+=======
+			<navigator class="li"  hover-class="none">
+				<view class="iconfont iconwuxing"></view>
+				<text>收藏</text>
+			</navigator>
+			<navigator class="li"  hover-class="none">
+				<view class="iconfont iconpinglun" style="color: #2DAEE0;"></view>
+				<text>评价</text>
+			</navigator>
+			<navigator class="li"  hover-class="none">
+				<view class="iconfont iconshijian" style="color: #FF909E;"></view>
+				<text>最近浏览</text>
+			</navigator>
+			<navigator class="li"  hover-class="none">
+				<view class="iconfont iconhezuo" style="color: #61C28E;"></view>
+				<text>我要合作</text>
+			</navigator>
+			<navigator class="li"  hover-class="none">
+				<view class="iconfont iconkaifa___" style="color: #F19A3E;"></view>
+				<text>软件开发</text>
+			</navigator>
+			<navigator class="li"  hover-class="none">
+>>>>>>> 69152c2474bc6f1ca93197ed975ed530df5549f4
 				<view class="iconfont iconshipin-tianchong" style="color: #EDBE2F;"></view>
 				<text>视频制作</text>
 			</navigator>
@@ -40,6 +64,7 @@
 				<text>系统通知</text>
 				<view class="num">2</view>
 			</navigator>
+<<<<<<< HEAD
 		</view>
 		
 		</view>
@@ -49,6 +74,8 @@
 				<image :src="item.selectedIconPath" v-show=" index == activeTabbar "></image>
 				<text>{{ item.text }}</text>
 			</view>
+=======
+>>>>>>> 69152c2474bc6f1ca93197ed975ed530df5549f4
 		</view>
 	
 	</view>

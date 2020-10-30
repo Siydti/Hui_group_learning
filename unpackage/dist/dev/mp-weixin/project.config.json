@@ -6,6 +6,7 @@
   "setting": {
     "urlCheck": false,
     "es6": true,
+<<<<<<< HEAD
     "enhance": false,
     "postcss": false,
     "preloadBackgroundData": false,
@@ -52,6 +53,29 @@
       "list": []
     },
     "miniprogram": {
+=======
+    "minified": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "",
+  "appid": "wx24de4436886e178b",
+  "projectname": "慧团学小程序",
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": -1,
+>>>>>>> 69152c2474bc6f1ca93197ed975ed530df5549f4
       "list": []
     }
   }

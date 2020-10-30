@@ -63,6 +63,7 @@
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },
+<<<<<<< HEAD
   "permission": {
     "scope.userLocation": {
       "desc": "用户实现定位功能"
@@ -70,4 +71,39 @@
   },
   "usingComponents": {},
   "sitemapLocation": "sitemap.json"
+=======
+  "tabBar": {
+    "color": "#9A9A9A",
+    "selectedColor": "#48B4B7",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "/static/images/ICON/home_empty.png",
+        "selectedIconPath": "/static/images/ICON/home_fill.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/orderForm/orderForm",
+        "iconPath": "static/images/ICON/order_empty.png",
+        "selectedIconPath": "static/images/ICON/order_fill.png",
+        "text": "订单"
+      },
+      {
+        "pagePath": "pages/recordedVideo/recordedVideo",
+        "iconPath": "static/images/ICON/play_empty.png",
+        "selectedIconPath": "static/images/ICON/play_fill.png",
+        "text": "录播"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "static/images/ICON/me_empty.png",
+        "selectedIconPath": "static/images/ICON/me_fill.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {}
+>>>>>>> 69152c2474bc6f1ca93197ed975ed530df5549f4
 }

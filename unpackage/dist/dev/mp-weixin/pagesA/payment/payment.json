@@ -1,7 +1,0 @@
-{
-  "usingComponents": {
-    "van-stepper": "/wxcomponents/vant/stepper/index",
-    "van-checkbox": "/wxcomponents/vant/checkbox/index",
-    "van-checkbox-group": "/wxcomponents/vant/checkbox-group/index"
-  }
-}
